@@ -1,0 +1,229 @@
+Mongo DB Idk
+
+use("MyClass")
+db.createCollection("Student")
+db.StudentinsertOne({ 
+Name : "Radhe"
+Age : 99
+Branch : "AD"
+}
+use("Poornima")
+
+db.createCollection("Student")
+
+db.Student.insertMany([
+  {
+    studentId: 101,
+    name: "Ravi Sharma",
+    department: "BCA",
+    graduationYear: 2026,
+    cgpa: 8.5,
+    address: {
+      street: "12 MG Road",
+      city: "Delhi",
+      state: "Delhi",
+      pincode: "110001"
+    },
+    skills: ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    studentId: 102,
+    name: "Sara Khan",
+    department: "BBA",
+    graduationYear: 2025,
+    cgpa: 9.1,
+    address: {
+      street: "45 Linking Road",
+      city: "Mumbai",
+      state: "Maharashtra",
+      pincode: "400050"
+    },
+    skills: ["Marketing", "Excel", "Communication"]
+  },
+  {
+    studentId: 103,
+    name: "John Mathew",
+    department: "B.Tech",
+    graduationYear: 2026,
+    cgpa: 7.8,
+    address: {
+      street: "78 Brigade Road",
+      city: "Bangalore",
+      state: "Karnataka",
+      pincode: "560001"
+    },
+    skills: ["Python", "Machine Learning", "SQL"]
+  },
+  {
+    studentId: 104,
+    name: "Priya Nair",
+    department: "BCA",
+    graduationYear: 2027,
+    cgpa: 9.4,
+    address: {
+      street: "23 Marine Drive",
+      city: "Kochi",
+      state: "Kerala",
+      pincode: "682031"
+    },
+    skills: ["Java", "Spring Boot", "MongoDB"]
+  },
+  {
+    studentId: 105,
+    name: "Amit Verma",
+    department: "MCA",
+    graduationYear: 2025,
+    cgpa: 8.0,
+    address: {
+      street: "56 Park Street",
+      city: "Kolkata",
+      state: "West Bengal",
+      pincode: "700016"
+    },
+    skills: ["C++", "Data Structures", "Algorithms"]
+  },
+  {
+    studentId: 106,
+    name: "Neha Gupta",
+    department: "B.Com",
+    graduationYear: 2026,
+    cgpa: 7.5,
+    address: {
+      street: "89 Residency Road",
+      city: "Lucknow",
+      state: "Uttar Pradesh",
+      pincode: "226001"
+    },
+    skills: ["Accounting", "Tally", "Excel"]
+  },
+  {
+    studentId: 107,
+    name: "Arjun Reddy",
+    department: "B.Tech",
+    graduationYear: 2027,
+    cgpa: 8.9,
+    address: {
+      street: "34 Banjara Hills",
+      city: "Hyderabad",
+      state: "Telangana",
+      pincode: "500034"
+    },
+    skills: ["React", "Node.js", "MongoDB"]
+  },
+  {
+    studentId: 108,
+    name: "Divya Joshi",
+    department: "BBA",
+    graduationYear: 2025,
+    cgpa: 8.2,
+    address: {
+      street: "67 FC Road",
+      city: "Pune",
+      state: "Maharashtra",
+      pincode: "411004"
+    },
+    skills: ["HR", "Recruitment", "Communication"]
+  },
+  {
+    studentId: 109,
+    name: "Karan Singh",
+    department: "BCA",
+    graduationYear: 2026,
+    cgpa: 7.1,
+    address: {
+      street: "12 Sector 17",
+      city: "Chandigarh",
+      state: "Punjab",
+      pincode: "160017"
+    },
+    skills: ["PHP", "MySQL", "WordPress"]
+  },
+  {
+    studentId: 110,
+    name: "Ananya Das",
+    department: "MCA",
+    graduationYear: 2027,
+    cgpa: 9.6,
+    address: {
+      street: "90 Salt Lake",
+      city: "Kolkata",
+      state: "West Bengal",
+      pincode: "700091"
+    },
+    skills: ["Python", "Django", "PostgreSQL"]
+  },
+  {
+    studentId: 111,
+    name: "Rohit Mehta",
+    department: "B.Com",
+    graduationYear: 2025,
+    cgpa: 6.9,
+    address: {
+      street: "45 CG Road",
+      city: "Ahmedabad",
+      state: "Gujarat",
+      pincode: "380009"
+    },
+    skills: ["Finance", "Stock Market", "Excel"]
+  },
+  {
+    studentId: 112,
+    name: "Ishita Roy",
+    department: "B.Tech",
+    graduationYear: 2026,
+    cgpa: 8.7,
+    address: {
+      street: "23 Park Circus",
+      city: "Kolkata",
+      state: "West Bengal",
+      pincode: "700017"
+    },
+    skills: ["AI", "Deep Learning", "TensorFlow"]
+  },
+  {
+    studentId: 113,
+    name: "Vikram Rao",
+    department: "BCA",
+    graduationYear: 2027,
+    cgpa: 7.4,
+    address: {
+      street: "56 Jubilee Hills",
+      city: "Hyderabad",
+      state: "Telangana",
+      pincode: "500033"
+    },
+    skills: ["Flutter", "Dart", "Firebase"]
+  },
+  {
+    studentId: 114,
+    name: "Meera Iyer",
+    department: "BBA",
+    graduationYear: 2026,
+    cgpa: 9.0,
+    address: {
+      street: "78 Anna Salai",
+      city: "Chennai",
+      state: "Tamil Nadu",
+      pincode: "600002"
+    },
+    skills: ["Business Analytics", "Power BI", "SQL"]
+  },
+  {
+    studentId: 115,
+    name: "Sahil Kapoor",
+    department: "MCA",
+    graduationYear: 2025,
+    cgpa: 8.3,
+    address: {
+      street: "34 Rajouri Garden",
+      city: "Delhi",
+      state: "Delhi",
+      pincode: "110027"
+    },
+    skills: ["DevOps", "Docker", "Kubernetes"]
+  }
+])
+
+db.Student.countDocuments()
+
+db.Student.find()
